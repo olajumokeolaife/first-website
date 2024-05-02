@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>       
+        <!--this shows the logo-->
+        <a href="index.html">Logo</a>
+        <!--navigation section-->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#about-bootcamp">Go to the bootcamp section</a>
+        </nav>
+    </header>
+    <br>
+<main>
+    <form>
+        <div>
+            <label for="emailaddress">What is your email address</label>
+            <input type="email"
+            id="emailaddress"
+            name="emailholder"
+            placeholder="Type your email" required/>
+         </div>
+         <br>
+
+        <div>
+            <label for="message">Message</label>
+            <textarea
+            id="message"
+            name="message"
+            placeholder="Type your message..."
+            rows="5"
+            ></textarea>
+        </div>
+        <br>
+
+        <div>
+            <label>Favorite web language</label>
+                <!--Radio helps to choose multiple options-->
+            <input type="radio" id="html" name="fav_language" value="HTML"/>
+            <label for="html">HTML</label>
+
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label>
+
+            <input type="radio" id="javascript" name="fav_language" value="JAVASCRIPT">
+            <label for="javascript">JAVASCRIPT</label>
+
+        </div>
+
+        <div>
+            <label>Favorite Programming Languages</label>
+                <!--the checkbox helps to choose multiple options-->
+            <input type="checkbox" id="python" name="fav_programming_lang_1" value="PYTHON">
+            <label for="python">PYTHON</label>
+
+            <input type="checkbox" id="java" name="fav_programming_lang_2" value="JAVA">
+            <label for="java">JAVA</label>
+
+            <input type="checkbox" id="ruby" name="fav_programming_lang_3" value="RUBY">
+            <label for="ruby">RUBY</label>
+        </div>
+
+        <div>
+            <label for="bootcamps">Select the NIYO Bootcamp/Course you are interested in</label>
+                <!--option also allows to choose single and multiple options by addding a multiple tag  -->
+            <select id="software" name="bootcamps" multiple>
+                <option value="software">Software development bootcamp</option>
+                <option value="data analytics">Data analytics with project management bootcamp </option>
+                <option value="marketing">Marketing for digital entrepreneurship bootcamp</option>
+            </select>
+        </div>
+            <!--submit button using an input element-->
+            <!--<input tpe="button" -->
+            <button type="submit">Submit</button>
+
+
+    </form>
+</main>
+  
+</body>
+</html>
